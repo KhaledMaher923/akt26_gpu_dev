@@ -21,7 +21,7 @@ __global__ void batch_gemm_kernel(int n, int batch_size,
                                     float* C)
 {
     // TODO: write your own kernel here
-        int b   = blockIdx.x;
+    int b   = blockIdx.x;
     int row = threadIdx.x;
     int col = threadIdx.y;
 
